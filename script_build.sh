@@ -4,12 +4,12 @@
 
 # Clone this script in your ROM Repo using following commands.
 # cd rom_repo
-# curl https://raw.githubusercontent.com/LegacyServer/Scripts/master/script_build.sh > script_build.sh
+# curl https://raw.githubusercontent.com/AryanKedare/Scripts/master/script_build.sh > script_build.sh
 
 # Some User's Details. Please fill it with your own details.
 
 # Replace "legacy" with your own SSH Username in lowercase
-username=legacy
+username=aryan
 
 # Assign values to parameters used in Script from Jenkins Job parameters
 use_ccache="$1"
@@ -57,5 +57,5 @@ fi
 
 # Build ROM
 . build/envsetup.sh
-lunch "$lunch_command"_"$device"-userdebug
-make "$target_command" -j8
+lunch aosp_mido-userdebug
+brunch aosp_mido-userdebug -j8
