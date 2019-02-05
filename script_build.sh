@@ -9,7 +9,7 @@
 # Some User's Details. Please fill it with your own details.
 
 # Replace "legacy" with your own SSH Username in lowercase
-username=aryan
+username=surya
 
 # Assign values to parameters used in Script from Jenkins Job parameters
 use_ccache="$1"
